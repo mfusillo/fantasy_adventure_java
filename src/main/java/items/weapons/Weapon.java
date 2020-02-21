@@ -1,12 +1,16 @@
-package items;
+package items.weapons;
 
-public abstract class AttackingItem {
+import items.Valuable;
+
+public abstract class Weapon implements Valuable {
 
     protected String name;
     protected int attackMultiplier;
+    protected int value;
 
-    public AttackingItem(String name, int attackMultiplier) {
+    public Weapon(String name, int attackMultiplier, int value) {
         this.name = name;
+        this.value = value;
         this.attackMultiplier = attackMultiplier;
     }
 

@@ -1,10 +1,9 @@
-import items.AttackingItem;
+import items.weapons.Weapon;
 import items.Spells.Fireball;
 import items.mythicalcreatures.Dragon;
 import items.mythicalcreatures.MythicalCreature;
 import org.junit.Before;
 import org.junit.Test;
-import players.Attacking;
 import players.Player;
 import players.casters.Caster;
 import players.casters.Warlock;
@@ -17,7 +16,7 @@ public class WarlockTest {
 
     Player warlock;
     Player knight;
-    AttackingItem fireball;
+    Weapon fireball;
     MythicalCreature dragon;
 
     @Before
@@ -37,7 +36,7 @@ public class WarlockTest {
     @Test
     public void canSelectAttackingItem(){
         warlock.selectAttackingItem(fireball);
-        assertEquals(fireball, warlock.getHeldAttackingItem());
+        assertEquals(fireball, warlock.getHeldWeapon());
     }
 
     @Test

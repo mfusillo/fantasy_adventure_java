@@ -2,10 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2799f2e-197d-4f9a-b441-dc148d0143cd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/items/Valuable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/players/StatusType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rooms/Room.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RoomTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/AttackingItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/weapons/Weapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/Spells/Fireball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Spells/Fireball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/weapons/Sword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/weapons/Sword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/items/weapons/Unarmed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/weapons/Unarmed.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/casters/Warlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/casters/Warlock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/casters/Wizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/casters/Wizard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/fighters/Barbarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/fighters/Barbarian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/fighters/Dwarf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/fighters/Dwarf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/players/fighters/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/fighters/Knight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/WarlockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WarlockTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/items/AttackingItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/items/Spells/Fireball.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/items/Spells/Fireball.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/items/weapons/Sword.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/items/weapons/Sword.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/items/weapons/Unarmed.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/items/weapons/Unarmed.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/players/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/players/casters/Warlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/casters/Warlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/players/casters/Wizard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/casters/Wizard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/players/fighters/Barbarian.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/fighters/Barbarian.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/players/fighters/Dwarf.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/fighters/Dwarf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/players/fighters/Knight.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/fighters/Knight.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/WarlockTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WarlockTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +39,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -44,12 +68,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.RoomTest.can_tackle_room_with_one_enemy_and_reduce_enemy_hp_to_0">
     <configuration name="All in FantasyAllDayLab" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyAllDayLab" />
       <option name="PACKAGE_NAME" value="" />
@@ -58,8 +83,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RoomTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="w12d4-FantasyallDayLab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RoomTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoomTest.can_tackle_room_with_one_enemy_and_reduce_enemy_hp_to_0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="w12d4-FantasyallDayLab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RoomTest" />
+      <option name="METHOD_NAME" value="can_tackle_room_with_one_enemy_and_reduce_enemy_hp_to_0" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RoomTest.can_tackle_room_with_one_enemy_and_reduce_enemy_hp_to_0" />
+        <item itemvalue="JUnit.RoomTest" />
         <item itemvalue="JUnit.All in FantasyAllDayLab" />
       </list>
     </recent_temporary>
@@ -78,30 +124,55 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="609" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1582212379020">
-      <screen x="0" y="23" width="1680" height="956" />
+    <state x="464" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1582285512982">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state x="464" y="112" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1582285512982" />
     <state x="609" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1680.956@0.23.1680.956" timestamp="1582212379020" />
     <state x="81" y="412" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1582208096717">
       <screen x="0" y="23" width="1680" height="956" />
     </state>
     <state x="81" y="412" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1680.956@0.23.1680.956" timestamp="1582208096717" />
-    <state width="1612" height="239" key="GridCell.Tab.0.bottom" timestamp="1582213854175">
-      <screen x="0" y="23" width="1680" height="956" />
+    <state x="207" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582281703685">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state x="207" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.800@0.0.1280.800" timestamp="1582281703685" />
+    <state width="1238" height="208" key="GridCell.Tab.0.bottom" timestamp="1582285486558">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="208" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1582285486558" />
     <state width="1612" height="239" key="GridCell.Tab.0.bottom/0.23.1680.956@0.23.1680.956" timestamp="1582213854175" />
-    <state width="1612" height="239" key="GridCell.Tab.0.center" timestamp="1582213854174">
-      <screen x="0" y="23" width="1680" height="956" />
+    <state width="1238" height="208" key="GridCell.Tab.0.center" timestamp="1582285486556">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1238" height="208" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1582285486556" />
     <state width="1612" height="239" key="GridCell.Tab.0.center/0.23.1680.956@0.23.1680.956" timestamp="1582213854174" />
-    <state width="1612" height="239" key="GridCell.Tab.0.left" timestamp="1582213854174">
-      <screen x="0" y="23" width="1680" height="956" />
+    <state width="1238" height="208" key="GridCell.Tab.0.left" timestamp="1582285486554">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1238" height="208" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1582285486554" />
     <state width="1612" height="239" key="GridCell.Tab.0.left/0.23.1680.956@0.23.1680.956" timestamp="1582213854174" />
-    <state width="1612" height="239" key="GridCell.Tab.0.right" timestamp="1582213854174">
-      <screen x="0" y="23" width="1680" height="956" />
+    <state width="1238" height="208" key="GridCell.Tab.0.right" timestamp="1582285486557">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state width="1238" height="208" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1582285486557" />
     <state width="1612" height="239" key="GridCell.Tab.0.right/0.23.1680.956@0.23.1680.956" timestamp="1582213854174" />
+    <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1582284541634">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1582284541634" />
+    <state width="1238" height="263" key="GridCell.Tab.1.center" timestamp="1582284541632">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1582284541632" />
+    <state width="1238" height="263" key="GridCell.Tab.1.left" timestamp="1582284541630">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1582284541630" />
+    <state width="1238" height="263" key="GridCell.Tab.1.right" timestamp="1582284541633">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1582284541633" />
     <state x="327" y="114" width="1028" height="772" key="find.popup" timestamp="1582211476715">
       <screen x="0" y="23" width="1680" height="956" />
     </state>

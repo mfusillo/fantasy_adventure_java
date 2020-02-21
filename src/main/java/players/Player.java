@@ -1,7 +1,8 @@
 package players;
 
-import items.AttackingItem;
+import items.weapons.Weapon;
 import items.weapons.Unarmed;
+import rooms.Room;
 
 public abstract class Player implements Attacking {
 
@@ -9,18 +10,22 @@ public abstract class Player implements Attacking {
     protected String name;
     protected int attackRating;
     protected int defenceRating;
-    protected AttackingItem heldAttackingItem;
+    protected Weapon heldWeapon;
+    protected StatusType status;
+    protected int loot;
 
     public Player(int healthPoints, String name, int attackRating, int defenceRating) {
         this.healthPoints = healthPoints;
         this.name = name;
         this.attackRating = attackRating;
         this.defenceRating = defenceRating;
-        this.heldAttackingItem = new Unarmed("unarmed", 1);
+        this.heldWeapon = new Unarmed("unarmed", 1, 0);
+        this.status = StatusType.ALIVE;
+        this.loot = 0;
     }
 
-    public AttackingItem getHeldAttackingItem() {
-        return heldAttackingItem;
+    public Weapon getHeldWeapon() {
+        return heldWeapon;
     }
 
     public int getDefenceRating() {
@@ -31,12 +36,31 @@ public abstract class Player implements Attacking {
         return healthPoints;
     }
 
-    public void selectAttackingItem(AttackingItem heldAttackingItem) {
-        this.heldAttackingItem = heldAttackingItem;
+    public void selectAttackingItem(Weapon heldWeapon) {
+        this.heldWeapon = heldWeapon;
+    }
+
+    public StatusType getStatus() {
+        return this.status;
+    }
+
+    public void setStatus(StatusType status){
+        this.status = status;
     }
 
     public int calculateTotalAttackValue() {
-        return this.heldAttackingItem.getAttackMultiplier() * this.attackRating;
+        return this.heldWeapon.getAttackMultiplier() * this.attackRating;
+    }
+
+    public void tackleRoom(Room room){
+        for(Player enemy : room.getEnemies()){
+            while (enemy.getHealthPoints() > 0)
+                attack(enemy);
+            if(enemy.getHealthPoints() == 0){
+                enemy.setStatus(StatusType.DEFEATED);
+            }
+        }
+
     }
 
     public void attack(Player opposingPlayer) {

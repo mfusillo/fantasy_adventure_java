@@ -1,11 +1,12 @@
 package items.weapons;
 
-import items.AttackingItem;
+public class Unarmed extends Weapon {
 
-public class Unarmed extends AttackingItem {
-
-    public Unarmed(String name, int attackMultiplier) {
-        super(name, attackMultiplier);
+    public Unarmed(String name, int attackMultiplier, int value) {
+        super(name, attackMultiplier, value);
     }
 
+    public int getValue() {
+        return this.value;
+    }
 }

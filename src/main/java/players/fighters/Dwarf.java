@@ -1,6 +1,5 @@
 package players.fighters;
 
-import items.AttackingItem;
 import players.Player;
 
 public class Dwarf extends Player {

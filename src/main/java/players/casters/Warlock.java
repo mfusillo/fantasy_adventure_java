@@ -1,6 +1,5 @@
 package players.casters;
 
-import items.AttackingItem;
 import players.Player;
 
 public class Warlock extends Caster {

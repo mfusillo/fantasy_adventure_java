@@ -1,8 +1,8 @@
 package items.Spells;
 
-import items.AttackingItem;
+import items.weapons.Weapon;
 
-public class Fireball extends AttackingItem {
+public class Fireball extends Weapon {
 
     public Fireball(String name, int attackMultiplier) {
         super(name, attackMultiplier);

@@ -1,10 +1,12 @@
 package items.weapons;
 
-import items.AttackingItem;
+public class Sword extends Weapon {
 
-public class Sword extends AttackingItem {
+    public Sword(String name, int attackMultiplier, int value) {
+        super(name, attackMultiplier, value);
+    }
 
-    public Sword(String name, int attackMultiplier) {
-        super(name, attackMultiplier);
+    public int getValue(){
+        return this.value;
     }
 }
