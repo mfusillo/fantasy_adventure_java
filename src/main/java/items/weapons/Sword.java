@@ -1,5 +1,7 @@
 package items.weapons;
 
+import items.Weapon;
+
 public class Sword extends Weapon {
 
     public Sword(String name, int attackMultiplier, int value) {

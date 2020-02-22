@@ -1,7 +1,8 @@
-package rooms;
+package quest;
 
 import items.Valuable;
 import players.Player;
+import players.StatusType;
 
 import java.util.ArrayList;
 
@@ -23,9 +24,21 @@ public class Room {
         return this.treasure;
     }
 
-    public void giveTreasure(Player player){
-        for(Player enemy: this.enemies){
-
+    public boolean areAllEnemiesDefeated(){
+        for(Player enemy : this.enemies){
+            if(enemy.getStatus() != StatusType.DEFEATED){
+                return false;
+            }
         }
+        return true;
     }
+
+    public int totalTreasureValue(){
+        int totalValue = 0;
+        for(Valuable valuable: treasure){
+            totalValue += valuable.getValue();
+        }
+        return totalValue;
+    }
+
 }

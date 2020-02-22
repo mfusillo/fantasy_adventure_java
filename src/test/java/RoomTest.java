@@ -5,7 +5,7 @@ import org.junit.Test;
 import players.Player;
 import players.StatusType;
 import players.casters.Warlock;
-import rooms.Room;
+import quest.Room;
 
 import java.util.ArrayList;
 
@@ -17,13 +17,12 @@ public class RoomTest {
     Player warlock;
     Player enemyWarlock;
     Valuable treasure1;
-    ArrayList<Valuable> treasures;
 
     @Before
     public void before(){
         room1 = new Room();
-        warlock = new Warlock(10, "Alex", 2, 4);
-        enemyWarlock = new Warlock(10, "Alex", 2, 4);
+        warlock = new Warlock(10, "Harlock", 2, 4);
+        enemyWarlock = new Warlock(10, "Evil Harlock", 2, 4);
         treasure1 = new Sword("Iron Sword", 3, 2);
         room1.getEnemies().add(enemyWarlock);
         room1.getTreasure().add(treasure1);
@@ -35,7 +34,11 @@ public class RoomTest {
         assertEquals(StatusType.DEFEATED, enemyWarlock.getStatus());
     }
 
-
+    @Test
+    public void can_increase_loot_when_all_enemies_are_defeated(){
+        warlock.tackleRoom(room1);
+        assertEquals(2, warlock.getLoot());
+    }
 
 
 

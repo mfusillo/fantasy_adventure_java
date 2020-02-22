@@ -1,6 +1,4 @@
-package items.weapons;
-
-import items.Valuable;
+package items;
 
 public abstract class Weapon implements Valuable {
 

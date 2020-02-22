@@ -1,8 +1,8 @@
 package players;
 
-import items.weapons.Weapon;
+import items.Weapon;
 import items.weapons.Unarmed;
-import rooms.Room;
+import quest.Room;
 
 public abstract class Player implements Attacking {
 
@@ -20,7 +20,7 @@ public abstract class Player implements Attacking {
         this.attackRating = attackRating;
         this.defenceRating = defenceRating;
         this.heldWeapon = new Unarmed("unarmed", 1, 0);
-        this.status = StatusType.ALIVE;
+        this.status = StatusType.HEALTHY;
         this.loot = 0;
     }
 
@@ -34,6 +34,10 @@ public abstract class Player implements Attacking {
 
     public int getHealthPoints() {
         return healthPoints;
+    }
+
+    public int getLoot() {
+        return this.loot;
     }
 
     public void selectAttackingItem(Weapon heldWeapon) {
@@ -59,6 +63,7 @@ public abstract class Player implements Attacking {
             if(enemy.getHealthPoints() == 0){
                 enemy.setStatus(StatusType.DEFEATED);
             }
+            if(room.areAllEnemiesDefeated()) this.loot += room.totalTreasureValue();
         }
 
     }

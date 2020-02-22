@@ -1,4 +1,4 @@
-import items.weapons.Weapon;
+import items.Weapon;
 import items.Spells.Fireball;
 import items.mythicalcreatures.Dragon;
 import items.mythicalcreatures.MythicalCreature;
@@ -23,7 +23,7 @@ public class WarlockTest {
     public void before() {
         warlock = new Warlock(100, "Alex", 2, 4);
         knight = new Knight(150, "Stephen", 3, 1);
-        fireball = new Fireball("Fireball", 6);
+        fireball = new Fireball("Fireball", 6, 4);
         dragon = new Dragon("Harrison", 2);
     }
 
@@ -52,10 +52,11 @@ public class WarlockTest {
     }
 
     @Test
-    public void canReduceDefenseIfOpponentsDefenceRatingIsMoreThanAttackersAttack(){    Player dwarf = new Dwarf(11, "Kirkwood", 2, 3);
-    warlock.attack(dwarf);
-    assertEquals(2, dwarf.getDefenceRating());
-    assertEquals(11, dwarf.getHealthPoints());
+    public void canReduceDefenseIfOpponentsDefenceRatingIsMoreThanAttackersAttack(){
+        Player dwarf = new Dwarf(11, "Kirkwood", 2, 3);
+        warlock.attack(dwarf);
+        assertEquals(2, dwarf.getDefenceRating());
+        assertEquals(11, dwarf.getHealthPoints());
     }
 
 }
