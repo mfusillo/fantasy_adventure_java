@@ -2,28 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2799f2e-197d-4f9a-b441-dc148d0143cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/quest/Quest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/QuestTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/items/Spells/Fireball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Spells/Fireball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/items/weapons/Sword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/weapons/Sword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/items/weapons/Unarmed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/weapons/Unarmed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/items/weapons/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/items/Weapon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/players/StatusType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/players/StatusType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rooms/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quest/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RoomTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RoomTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WarlockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WarlockTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/items/Spells/Fireball.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/items/Spells/Fireball.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/items/weapons/Sword.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/items/weapons/Sword.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/items/weapons/Unarmed.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/items/weapons/Unarmed.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/items/weapons/Weapon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/quest/Quest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/quest/Quest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/players/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/players/StatusType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/StatusType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/players/casters/Warlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/players/casters/Warlock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rooms/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/quest/Quest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/quest/Quest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/RoomTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RoomTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/WarlockTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WarlockTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,11 +53,30 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
-  <component name="RunManager" selected="JUnit.RoomTest">
+  <component name="RunManager" selected="JUnit.QuestTest">
     <configuration name="All in FantasyAllDayLab" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FantasyAllDayLab" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="w12d4-FantasyallDayLab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="QuestTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuestTest.can_embark_quest_and_defeat_enemies" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="w12d4-FantasyallDayLab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="QuestTest" />
+      <option name="METHOD_NAME" value="can_embark_quest_and_defeat_enemies" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,6 +102,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.QuestTest" />
+        <item itemvalue="JUnit.QuestTest.can_embark_quest_and_defeat_enemies" />
         <item itemvalue="JUnit.RoomTest" />
         <item itemvalue="JUnit.RoomTest.can_tackle_room_with_one_enemy_and_reduce_enemy_hp_to_0" />
         <item itemvalue="JUnit.All in FantasyAllDayLab" />
@@ -118,10 +124,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="464" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1582373044443">
+    <state x="464" y="112" key="#com.intellij.ide.util.MemberChooser" timestamp="1582374569436">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="464" y="112" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1582373044443" />
+    <state x="464" y="112" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1582374569436" />
     <state x="609" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1680.956@0.23.1680.956" timestamp="1582212379020" />
     <state x="81" y="412" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1582208096717">
       <screen x="0" y="23" width="1680" height="956" />
@@ -131,42 +137,42 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="207" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.800@0.0.1280.800" timestamp="1582281703685" />
-    <state width="1238" height="206" key="GridCell.Tab.0.bottom" timestamp="1582374098738">
+    <state width="1238" height="203" key="GridCell.Tab.0.bottom" timestamp="1582375340178">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="206" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1582374098738" />
+    <state width="1238" height="203" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1582375340178" />
     <state width="1612" height="239" key="GridCell.Tab.0.bottom/0.23.1680.956@0.23.1680.956" timestamp="1582213854175" />
-    <state width="1238" height="206" key="GridCell.Tab.0.center" timestamp="1582374098734">
+    <state width="1238" height="203" key="GridCell.Tab.0.center" timestamp="1582375340174">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="206" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1582374098734" />
+    <state width="1238" height="203" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1582375340174" />
     <state width="1612" height="239" key="GridCell.Tab.0.center/0.23.1680.956@0.23.1680.956" timestamp="1582213854174" />
-    <state width="1238" height="206" key="GridCell.Tab.0.left" timestamp="1582374098731">
+    <state width="1238" height="203" key="GridCell.Tab.0.left" timestamp="1582375340172">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="206" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1582374098731" />
+    <state width="1238" height="203" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1582375340172" />
     <state width="1612" height="239" key="GridCell.Tab.0.left/0.23.1680.956@0.23.1680.956" timestamp="1582213854174" />
-    <state width="1238" height="206" key="GridCell.Tab.0.right" timestamp="1582374098736">
+    <state width="1238" height="203" key="GridCell.Tab.0.right" timestamp="1582375340175">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="206" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1582374098736" />
+    <state width="1238" height="203" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1582375340175" />
     <state width="1612" height="239" key="GridCell.Tab.0.right/0.23.1680.956@0.23.1680.956" timestamp="1582213854174" />
-    <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1582284541634">
+    <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1582375339168">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1582284541634" />
-    <state width="1238" height="263" key="GridCell.Tab.1.center" timestamp="1582284541632">
+    <state width="1238" height="263" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1582375339168" />
+    <state width="1238" height="263" key="GridCell.Tab.1.center" timestamp="1582375339165">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1582284541632" />
-    <state width="1238" height="263" key="GridCell.Tab.1.left" timestamp="1582284541630">
+    <state width="1238" height="263" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1582375339165" />
+    <state width="1238" height="263" key="GridCell.Tab.1.left" timestamp="1582375339163">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1582284541630" />
-    <state width="1238" height="263" key="GridCell.Tab.1.right" timestamp="1582284541633">
+    <state width="1238" height="263" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1582375339163" />
+    <state width="1238" height="263" key="GridCell.Tab.1.right" timestamp="1582375339166">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1582284541633" />
+    <state width="1238" height="263" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1582375339166" />
     <state x="327" y="114" width="1028" height="772" key="find.popup" timestamp="1582211476715">
       <screen x="0" y="23" width="1680" height="956" />
     </state>

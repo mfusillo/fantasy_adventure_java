@@ -10,5 +10,7 @@ public class Quest {
         this.rooms = new ArrayList<Room>();
     }
 
-
+    public ArrayList<Room> getRooms() {
+        return this.rooms;
+    }
 }

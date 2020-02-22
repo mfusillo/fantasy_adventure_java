@@ -2,6 +2,7 @@ package players;
 
 import items.Weapon;
 import items.weapons.Unarmed;
+import quest.Quest;
 import quest.Room;
 
 public abstract class Player implements Attacking {
@@ -56,16 +57,20 @@ public abstract class Player implements Attacking {
         return this.heldWeapon.getAttackMultiplier() * this.attackRating;
     }
 
+    public void embarkQuest(Quest quest){
+        for(Room room : quest.getRooms()){
+            tackleRoom(room);
+        }
+    }
+
     public void tackleRoom(Room room){
         for(Player enemy : room.getEnemies()){
-            while (enemy.getHealthPoints() > 0)
+            while (enemy.getHealthPoints() > 0) {
                 attack(enemy);
-            if(enemy.getHealthPoints() == 0){
-                enemy.setStatus(StatusType.DEFEATED);
             }
-            if(room.areAllEnemiesDefeated()) this.loot += room.totalTreasureValue();
+            enemy.setStatus(StatusType.DEFEATED);
         }
-
+        if(room.areAllEnemiesDefeated()) this.loot += room.totalTreasureValue();
     }
 
     public void attack(Player opposingPlayer) {
